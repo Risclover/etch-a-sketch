@@ -81,10 +81,23 @@ function changeColor(e) {
 	} else if (currentMode === 'default') {
 		e.target.style.backgroundColor = currentColor;
 	} else if (currentMode === 'gray') {
-		e.target.style.backgroundColor = 'gray';
+		e.target.style.backgroundColor = calculateGray(e);
 	} else if (currentMode === 'eraser') {
 		e.target.style.backgroundColor = 'white';
 	}
+}
+
+// Shading mode
+function calculateGray(e){
+    let clr = returnRGB(e.target.style.backgroundColor);
+    if(!clr || clr[1] !== clr[2] || clr[1] !== clr[3]){
+        return `rgb(255, 255, 255)`;
+    }
+    return clr[1] <= 0 ? `rgb(255, 255, 255)` : `rgb(${clr[1]-25}, ${clr[1]-25}, ${clr[1]-25})`;
+}
+
+function returnRGB(value){
+    return value.match(/rgb\(([0-9]*), ([0-9]*), ([0-9]*)\)/);
 }
 
 // Changes the buttons depending on which "mode" is active
