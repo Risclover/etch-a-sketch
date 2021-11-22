@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS spreadsheet -->
+    <link href="peanuts.css" rel="stylesheet">
+
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+<!-- Note that this is set up in various divs so
+that we can use Flex to create our wanted layout. -->
+
+<div id="entirepage">
+    <header>
+        <h1>Etch-a-Sketch</h1>
+        <p title="Testing">Select a color or a different mode, then select your size, and get drawing!</p>
+    </header>
+    <main>
+        <div id="btncontainer">
+            <input type="color" id="colorpicker" value="#0b478b">
+            <button id="default">Default mode</button>
+            <button id="party">Party mode</button>
+            <button id="grayscale">Shading</button>
+            <button id="eraser">Eraser mode</button> 
+            <button id="clear">Clear grid</button>
+        </div>
+        <div id="rightside">
+            <div id="maincontainer">
+            </div>
+            <label for="sizeslider" id="sizevalue">30 x 30</label>
+            <input type="range" min="1" max="100" value="30" id="sizeslider">
+        </div>
+    </main>
+    <footer>
+        <p>Created by Sara Dunlop (<a href="https://www.github.com/Risclover">RiscloverYT</a>)</p>
+    </footer>
+</div>
+
+<!-- JavaScript script -->
+<script src="new.js"></script>
+
+</body>
+</html>
