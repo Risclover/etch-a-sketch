@@ -38,15 +38,15 @@ sizeSlider.onmousemove = (e) => updateSizeValue(e.target.value);
 sizeSlider.onchange = (e) => changeSize(e.target.value);
 
 // When the size is changed, we set the grid size, update the size value (text), and reload the grid.
-function changeSize(value) {
-	setCurrentSize(value);
-	updateSizeValue(value);
+function changeSize(num) {
+	setCurrentSize(num);
+	updateSizeValue(num);
 	reloadGrid();
 }
 
 // When we update the size value, the text changes to reflect.
-function updateSizeValue(value) {
-	sizeValue.innerHTML = `${value} x ${value}`;
+function updateSizeValue(num) {
+	sizeValue.innerHTML = `${num} x ${num}`;
 }
 
 // When we reload the grid, we ensure that we clear the grid and that the size is still the current size.
@@ -96,8 +96,8 @@ function calculateGray(e){
     return clr[1] <= 0 ? `rgb(255, 255, 255)` : `rgb(${clr[1]-25}, ${clr[1]-25}, ${clr[1]-25})`;
 }
 
-function returnRGB(value){
-    return value.match(/rgb\(([0-9]*), ([0-9]*), ([0-9]*)\)/);
+function returnRGB(num){
+    return num.match(/rgb\(([0-9]*), ([0-9]*), ([0-9]*)\)/);
 }
 
 // Changes the buttons depending on which "mode" is active
