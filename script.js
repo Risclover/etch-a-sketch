@@ -5,13 +5,18 @@ let currentMode = defaultMode;
 let currentSize = defaultSize;
 let currentColor = defaultColor;
 
+// Sets the program's current mode
 function setCurrentMode(newMode) {
 	activeButton(newMode);
 	currentMode = newMode;
 }
+
+// Sets the grid's size
 function setCurrentSize(newSize) {
 	currentSize = newSize;
 }
+
+// Sets the color of the square (if in default mode)
 function setCurrentColor(newColor) {
 	currentColor = newColor;
 }
@@ -44,12 +49,12 @@ function changeSize(num) {
 	reloadGrid();
 }
 
-// When we update the size value, the text changes to reflect.
+// When we update the size value, the text changes to reflect the value. (It's a square, so the value is always the same for length and width).
 function updateSizeValue(num) {
 	sizeValue.innerHTML = `${num} x ${num}`;
 }
 
-// When we reload the grid, we ensure that we clear the grid and that the size is still the current size.
+// When we reload the grid (which happens when "Clear grid" is pressed), we ensure that we clear the grid and that the size is still the current size.
 function reloadGrid() {
 	clearGrid()
 	makeGrid(currentSize)
@@ -60,7 +65,7 @@ function clearGrid() {
 	grid.innerHTML = ''
 }
 
-// Creates the base grid
+// Creates the base grid and includes the code that says "when the mouse goes over the squares, draw."
 function makeGrid(size) {
 	grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
 	grid.style.gridTemplateRows = `repeat(${size}, 1fr)`;
@@ -71,7 +76,7 @@ function makeGrid(size) {
 	}
 }
 
-// Conditions to set the color of the "pen"
+// These are the conditions to set the color of the "pen" (squares)
 function changeColor(e) {
 	if (currentMode === 'party') {
 		const randomR = Math.floor(Math.random() * 256);
@@ -87,7 +92,7 @@ function changeColor(e) {
 	}
 }
 
-// Shading mode
+// Shading mode code
 function calculateGray(e){
     let clr = returnRGB(e.target.style.backgroundColor);
     if(!clr || clr[1] !== clr[2] || clr[1] !== clr[3]){
@@ -100,7 +105,7 @@ function returnRGB(num){
     return num.match(/rgb\(([0-9]*), ([0-9]*), ([0-9]*)\)/);
 }
 
-// Changes the buttons depending on which "mode" is active
+// Changes the button styling to indicate which mode is the active mode
 function activeButton(newMode) {
 	if (currentMode === 'party') {
 		partyBtn.classList.remove('active');
@@ -127,4 +132,32 @@ function activeButton(newMode) {
 window.onload = () => {
 	makeGrid(defaultSize);
 	activeButton(defaultMode);
+	dropdownModeThing(document.getElementById('dropdown-mode').value);
 }
+
+// Code for the dropdown menu
+function dropdownModeThing(val) {
+	if (val === 'default') {
+		setCurrentMode('default');
+	} else if (val === 'party') {
+		setCurrentMode('party');
+	} else if (val === 'shading') {
+		setCurrentMode('gray');
+	} else if (val === 'eraser') {
+		setCurrentMode('eraser');
+	} else if (val === 'clear') {
+		reloadGrid();
+	}
+}
+
+const dropdown = document.getElementById('dropdown-mode');
+
+dropdown.addEventListener('change', (e) => {
+	if(e.target.value === "clear") {
+		reloadGrid();
+	} else if (e.target.value === "shading") {
+		setCurrentMode("gray");
+	} else {
+  setCurrentMode(e.target.value);
+	}
+});
