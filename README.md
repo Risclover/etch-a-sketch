@@ -15,6 +15,9 @@ This app features various drawing modes as well as the ability to change the gri
         - [Eraser Mode](#eraser-mode)
         - [Clear Grid](#clear-grid)
 
+2. [About the Project](#about-the-project)
+3. [Links](#links)
+
 ## Instructions
 Use your mouse to draw pictures on the board by hovering your mouse over the board. 
 
@@ -46,3 +49,22 @@ A mode in which the "color" is white, so going over previous work "erases" it.
 
 Select this to clear the grid, erasing all of your work.
 
+## About the Project
+
+This etch-a-sketch drawing app was created as a result of [The Odin Project's curriculum](https://www.theodinproject.com/) near the beginning of my JavaScript learning journey. 
+
+### Technologies Used
+
+1. HTML
+2. CSS
+3. JavaScript
+
+### Blog Post
+
+To read more about this project, you can visit my website and read the blog post dedicated to this project.
+
+## Links
+
+1. [Live Demo][https://risclover.github.com/etch-a-sketch]
+2. [Code Repo](https://www.github.com/Risclover/etch-a-sketch)
+3. [Project Breakdown](https://risclover.github.io/official-portfolio/blog/project_breakdown_etchasketch.html)
