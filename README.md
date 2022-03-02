@@ -18,19 +18,19 @@ Use your mouse to draw pictures on the board by hovering your mouse over the boa
 
 ### Default Mode
 
-!(./Images/default_mode.jpg)
+![](./Images/default_mode.jpg)
 
 The default mode is the mode in which the user can pick any color from the color picker.
 
 ### Party Mode
 
-!(./Images/party_mode.jpg)
+![](./Images/party_mode.jpg)
 
 The party mode is a fun mode in which the colors are randomly generated.
 
 ### Shading Mode
 
-!(./Images/shading_mode.jpg)
+![](./Images/shading_mode.jpg)
 
 "Shading" is a mode in which the color goes from white to black, one shade at a time, as the mouse goes over the pixel.
 
