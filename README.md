@@ -1,6 +1,6 @@
 # Etch-a-Sketch
 
-!(./Images/main_app.jpg)
+![](./Images/main_app.jpg)
 
 This etch-a-sketch is a browser-based drawing app in which the user is able to draw pretty pictures. It is named "Etch-a-Sketch" because, although it doesn't have the classic red etch-a-sketch design, the user uses their mouse to draw, meaning they must begin from the edge each time (just like with a real etch-a-sketch). 
 
