@@ -8,7 +8,12 @@ This app features various drawing modes as well as the ability to change the gri
 
 ### Table of Contents
 1. [Instructions](#Instructions)
-2. [About Various Modes](#about-various-modes)
+- [About Various Modes](#about-various-modes)
+-- Default Mode
+-- Party Mode
+-- Shading Mode
+-- Eraser Mode
+-- Clear Grid
 
 ## Instructions
 Use your mouse to draw pictures on the board by hovering your mouse over the board. 
