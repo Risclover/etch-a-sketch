@@ -65,6 +65,6 @@ To read more about this project, you can visit my website and read the blog post
 
 ## Links
 
-1. [Live Demo](https://risclover.github.com/etch-a-sketch)
+1. [Live Demo](https://risclover.github.io/etch-a-sketch)
 2. [Code Repo](https://www.github.com/Risclover/etch-a-sketch)
 3. [Project Breakdown](https://risclover.github.io/official-portfolio/blog/project_breakdown_etchasketch.html)
