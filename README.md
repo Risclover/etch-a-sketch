@@ -13,31 +13,31 @@ This app features various drawing modes as well as the ability to change the gri
 ## Instructions
 Use your mouse to draw pictures on the board by hovering your mouse over the board. 
 
-## About Various Modes
+### About Various Modes
 
-### Default Mode
+#### Default Mode
 
 ![](./Images/default_mode.png)
 
 The default mode is the mode in which the user can pick any color from the color picker.
 
-### Party Mode
+#### Party Mode
 
 ![](./Images/party_mode.png)
 
 The party mode is a fun mode in which the colors are randomly generated.
 
-### Shading Mode
+#### Shading Mode
 
 ![](./Images/shading_mode.png)
 
 "Shading" is a mode in which the color goes from white to black, one shade at a time, as the mouse goes over the pixel.
 
-### Eraser Mode
+#### Eraser Mode
 
 A mode in which the "color" is white, so going over previous work "erases" it.
 
-### Clear Grid
+#### Clear Grid
 
 Select this to clear the grid, erasing all of your work.
 
