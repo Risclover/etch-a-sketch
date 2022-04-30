@@ -1,19 +1,25 @@
 # Etch-a-Sketch
 
-![](./Images/main_app.png)
+![](./Images/etch-a-sketch-gif.gif)
 
 This etch-a-sketch is a browser-based drawing app in which the user is able to draw pretty pictures. It is named "Etch-a-Sketch" because, although it doesn't have the classic red etch-a-sketch design, the user uses their mouse to draw, meaning they must begin from the edge each time (just like with a real etch-a-sketch). 
 
 This app features various drawing modes as well as the ability to change the grid (drawing pixel) size.
 
 ### Table of Contents
-1. [Instructions](#Instructions)
+- [Etch-a-Sketch](#etch-a-sketch)
+    - [Table of Contents](#table-of-contents)
+  - [Instructions](#instructions)
     - [About Various Modes](#about-various-modes)
-        - [Default Mode](#default-mode)
-        - [Party Mode](#party-mode)
-        - [Shading Mode](#shading-mode)
-        - [Eraser Mode](#eraser-mode)
-        - [Clear Grid](#clear-grid)
+      - [Default Mode](#default-mode)
+      - [Party Mode](#party-mode)
+      - [Shading Mode](#shading-mode)
+      - [Eraser Mode](#eraser-mode)
+      - [Clear Grid](#clear-grid)
+  - [About the Project](#about-the-project)
+    - [Technologies Used](#technologies-used)
+    - [Blog Post](#blog-post)
+  - [Links](#links)
 
 2. [About the Project](#about-the-project)
 3. [Links](#links)
