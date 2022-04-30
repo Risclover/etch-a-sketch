@@ -9,6 +9,7 @@ let currentColor = defaultColor;
 function setCurrentMode(newMode) {
 	activeButton(newMode);
 	currentMode = newMode;
+	changeDrop();
 }
 
 // Sets the grid's size
@@ -161,3 +162,8 @@ dropdown.addEventListener('change', (e) => {
   setCurrentMode(e.target.value);
 	}
 });
+
+function changeDrop() {
+	document.selectElementById('dropdown-mode').selectedIndex = 0;
+	document.selectElementById('dropdown-mode').value = 'default';
+}

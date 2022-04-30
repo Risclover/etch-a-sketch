@@ -22,6 +22,13 @@ that we can use Flex to create our wanted layout. -->
     <main>
         <div id="btncontainer">
             <input type="color" id="colorpicker" value="#0b478b">
+            <select id='dropdown-mode' onchange="changeDropdown()">
+                <option name="default" selected value="default">Default Mode</option>
+                <option name="party" value="party">Party Mode</option>
+                <option name="shading" value="gray">Shading</option>
+                <option name="eraser" value='eraser'>Eraser Mode</option>
+                <option name="clear" value="clear">Clear grid</option>
+            </select>
             <button id="default">Default mode</button>
             <button id="party">Party mode</button>
             <button id="grayscale">Shading</button>
