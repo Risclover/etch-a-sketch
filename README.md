@@ -1,7 +1,7 @@
 # Etch-a-Sketch
 
 <p align="center" width="100%">
-<img src="./Images/etch-a-sketch-gif.gif" width="100%" />
+<img src="./Images/etch-a-sketch-gif.gif" />
 </p>
 
 
